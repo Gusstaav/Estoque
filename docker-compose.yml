@@ -1,0 +1,29 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: estoque_mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: estoque_db
+      MYSQL_USER: estoque_user
+      MYSQL_PASSWORD: estoque123
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: estoque_phpmyadmin
+    restart: unless-stopped
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+
+volumes:
+  mysql_data:
