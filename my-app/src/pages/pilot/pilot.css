@@ -1,0 +1,96 @@
+#section-pilot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80ch;
+    width: 100%;
+}
+#container-pilot{
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    width: 100%;
+    background-color: #ff6464;
+    border: solid 1px;
+    border-radius: 10px;
+    border-color: red;
+    border-left: none;
+    border-right: none;
+}
+#welcome-container-pilot{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-right: 10%;
+}
+#logo-pilot{
+    width: 55vh;
+    height: 50vh;
+}
+#welcome-pilot{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #810103;
+    letter-spacing: 0.5px;
+}
+#container-choice-pilot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10%;
+}
+
+#link-pilot{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+#choice-pilot{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #810103;
+}
+#Manager-pilot{
+    margin-top: 20px;
+    padding: 5px;
+    width: 20ch;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+#Manager-pilot:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    transition: 2s;
+}
+#Employee-pilot{
+    margin-top: 20px;
+    padding: 5px;
+    width: 20ch;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+#Employee-pilot:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    transition: 1s;
+}
