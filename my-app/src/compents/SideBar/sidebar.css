@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#title-sidebar{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #810103;
+}
+#sidebar{
+    width: 220px;
+    height: 100vh;
+    background-color: rgb(29, 29, 29);
+    flex-shrink: 0;
+}
+#menu-sidebar{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+#options-sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+#options-sidebar:hover{
+    cursor: pointer;
+    background-color: red;
+    transition: 1s;
+}

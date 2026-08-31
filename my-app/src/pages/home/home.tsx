@@ -4,11 +4,11 @@ import './home.css'
 
 function Home(){
     return(
-        <html>
-        <section id='section'>
-           
+        <section id='section-home'>
+           <div id='menu'>
+           </div>
         </section>
-        </html>
+    
     )
 }
 
