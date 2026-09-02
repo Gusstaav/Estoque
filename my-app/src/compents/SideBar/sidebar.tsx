@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import IconMenu from '../../img/menu.png'
 import './sidebar.css'
 
 function Sidebar() {
@@ -7,38 +8,29 @@ function Sidebar() {
 
             <p id='title-sidebar'>Potato</p>
 
+            <img src={IconMenu} id='Icon-Menu'/> 
+                 
             <nav id='menu-sidebar'>
-
-                <NavLink id='options-sidebar' to="/home">
+                
+                <p id='welcome-sidebar'>Bem vindo</p>
+                <p id='welcome-sidebar-user'>"USER"</p>
+                
+                <NavLink id='options-sidebar-home' to="/home">
                     Início
                 </NavLink>
-
-                <NavLink id='options-sidebar' to="/estoque">
-                    Estoque
-                </NavLink>
-
-                <NavLink id='options-sidebar' to="/produtos">
-                    Separação
-                </NavLink>
                 
-                <NavLink id='options-sidebar' to="/produtos">
-                    Endereços
-                </NavLink>
+                <div id='options-sidebar-estoque'>
+                    <p>Estoque</p>
+                        <NavLink id='picking' to="/conferencia">Conferencia</NavLink>
+                        <NavLink id='picking' to="/picking">Inventario</NavLink>
+                </div>
 
-                <NavLink id='options-sidebar' to="/produtos">
-                    Movimentação
-                </NavLink>
+                <div id='options-sidebar-picking'>
+                    <p>Picking</p>
+                    <NavLink id='picking' to="/picking">Separação</NavLink>
+                </div>
 
-                <NavLink id='options-sidebar' to="/produtos">
-                    Ordens
-                </NavLink>
-
-
-                <NavLink id='options-sidebar' to="/usuarios">
-                    Usuários
-                </NavLink>
-
-                <NavLink id='options-sidebar' to="/configuracoes">
+                <NavLink id='settings' to="/configuracoes">
                     Configurações
                 </NavLink>
 

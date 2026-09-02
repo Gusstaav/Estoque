@@ -22,9 +22,7 @@ function Login(){
         );
 
        if (usuario) {
-
-            console.log('Usuário encontrado:', usuario);
-
+        
             navigate('/home');
 
         } else {

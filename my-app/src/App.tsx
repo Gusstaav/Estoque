@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './pages/login/login.tsx'
 import Home from './pages/home/home.tsx'
-import Pilot from './pages/pilot/pilot.tsx'
 import MainLayout from './compents/MainLayout/MainLayout.tsx';
 
 
@@ -14,17 +13,15 @@ function App() {
 
                 {/* Área pública */}
 
-                <Route path="/" element={<Pilot />} />
-
-                <Route path="/login" element={<Login />} />
+                <Route path="/" element={<Login />} />
 
 
                 {/* Área logada */}
 
                 <Route element={<MainLayout />}>
 
-                    <Route path="/home" element={<Home />} />
-
+                    <Route path="/home" element={<Home />} /> 
+                    
                 </Route>
 
             </Routes>

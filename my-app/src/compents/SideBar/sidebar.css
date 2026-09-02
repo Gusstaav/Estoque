@@ -8,20 +8,79 @@ body {
     text-align: center;
     color: #810103;
 }
+
+#Icon-Menu{
+    height: 25px;
+    width: 25px;
+    transition: width 0.5s ease;
+    overflow: hidden;
+}
+
+#welcome-sidebar{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: white;
+}
+#welcome-sidebar-user{
+    padding: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    border-left: none;
+    border-right: none;
+}
 #sidebar{
-    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
     height: 100vh;
     background-color: rgb(29, 29, 29);
     flex-shrink: 0;
+    transition: width 0.5s ease;
+    overflow: hidden;
 }
 #menu-sidebar{
+    display: none;
     height: 100%;
     width: 100%;
+    transition: 0.9s ease;
+    overflow: hidden;
+}
+#sidebar:hover {
+    width: 100px;
+    #menu-sidebar{
+        display: block;
+    }
+}
+
+#options-sidebar-home{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    width: 100%;
+    border-bottom: 1px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
     text-decoration: none;
+    color: white;
+    transition: height 0.3s ease;
 }
-#options-sidebar{
+
+#options-sidebar-home:hover{
+        cursor: pointer;
+        background-color: red;
+        transition: 1s;
+    }
+
+#settings{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,13 +88,86 @@ body {
     height: 7vh;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     text-decoration: none;
     color: white;
+    transition: height 0.3s ease;
 }
 
-#options-sidebar:hover{
-    cursor: pointer;
+#picking{
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+}
+
+#options-sidebar-estoque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    width: 100%;
+    border-bottom: 1px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    transition: height 0.3s ease;
+}
+
+#options-sidebar-estoque:hover{
+    height: 18vh;
     background-color: red;
-    transition: 1s;
+    #picking{
+        display:flex;
+        height: 9vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(29, 29, 29);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        color: white;
+    }
+    #picking:hover{
+        cursor: pointer;
+        transition: 1s;
+    }
+}
+
+#options-sidebar-picking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    width: 100%;
+    border-bottom: 1px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    transition: height 0.3s ease;
+}
+
+#options-sidebar-picking:hover{
+    height: 14vh;
+    background-color: red;
+    #picking{
+        display:flex;
+        height: 8vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(29, 29, 29);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        color: white;
+    }
+    #picking:hover{
+        cursor: pointer;
+        transition: 1s;
+    }
 }
